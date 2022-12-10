@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  /* Primary */
+  --bright-orange: #e38826;
+  --dark-cyan: #006970;
+  --very-dark-cyan: #004241;
+
+  /* Neutral */
+  --very-light-gray: #f2f2f2;
+  --transparent-white: #ffffffbf;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--very-light-gray);
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+#content {
+  border-radius: 8px;
+  display: flex;
+  width: 1000px;
+}
+
+#content .card {
+  padding: 50px;
+  padding-right: 62px;
+}
+
+#content .text h1 {
+  color: var(--very-light-gray);
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 36px;
+  margin: 32px 0;
+  text-transform: uppercase;
+}
+
+#content .text p {
+  color: var(--transparent-white);
+  line-height: 26px;
+}
+
+#content button {
+  background-color: var(--very-light-gray);
+  border: 2px solid var(--very-light-gray);
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 80px;
+  outline: none;
+  padding: 14px 36px;
+}
+
+#content button:hover {
+  background-color: transparent;
+  color: var(--very-light-gray);
+  transition: 0.3s;
+}
+
+#sedans {
+  background-color: var(--bright-orange);
+  border-radius: 8px 0 0 8px;
+}
+
+#sedans img {
+  animation: translateLeft 0.5s ease-in-out, fadeIn 0.5s ease-in;
+}
+
+#sedans button {
+  color: var(--bright-orange);
+}
+
+#suvs {
+  background-color: var(--dark-cyan);
+}
+
+#suvs img {
+  animation: translateLeft 0.8s ease-in-out, fadeIn 0.8s ease-in;
+}
+
+#suvs button {
+  color: var(--dark-cyan);
+}
+
+#luxury {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0px 8px 8px 0;
+}
+
+#luxury img {
+  animation: translateLeft 1s ease-in-out, fadeIn 1s ease-in;
+}
+
+#luxury button {
+  color: var(--very-dark-cyan);
+}
+
+.attribution {
+  font-size: 11px;
+  margin: 16px 0;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--bright-orange);
+}
+
+.attribution a:hover {
+  color: var(--very-dark-cyan);
+}
+
+@media (width < 1000px) {
+  #content {
+    display: block;
+    margin-top: 32px;
+    width: 90%;
+  }
+
+  #sedans {
+    border-radius: 8px 8px 0 0;
+  }
+
+  #luxury {
+    border-radius: 0 0 8px 8px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes translateLeft {
+  from {
+    transform: translateX(-40px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
