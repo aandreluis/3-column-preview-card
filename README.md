@@ -31,7 +31,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🌎 Links
 
-- Solution: []()
-- Live Site: []()
+- Solution: [https://www.frontendmentor.io/solutions/3column-preview-card-component-XXdWId4CEy
+  ](https://www.frontendmentor.io/solutions/3column-preview-card-component-XXdWId4CEy)
+- Live Site: [https://3-column-preview-card-aandreluis.netlify.app/](https://3-column-preview-card-aandreluis.netlify.app/)
 
 ---
