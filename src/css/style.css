@@ -5,10 +5,9 @@
   --bright-orange: #e38826;
   --dark-cyan: #006970;
   --very-dark-cyan: #004241;
-
   /* Neutral */
-  --very-light-gray: #f2f2f2;
   --transparent-white: #ffffffbf;
+  --very-light-gray: #f2f2f2;
 }
 
 * {
@@ -42,7 +41,7 @@ body {
   padding-right: 62px;
 }
 
-#content .text h1 {
+#content .text h2 {
   color: var(--very-light-gray);
   font-family: "Big Shoulders Display", cursive;
   font-size: 36px;
@@ -55,57 +54,63 @@ body {
   line-height: 26px;
 }
 
-#content button {
+.btn-learnMore {
   background-color: var(--very-light-gray);
-  border: 2px solid var(--very-light-gray);
   border-radius: 25px;
+  border: 2px solid var(--very-light-gray);
   cursor: pointer;
+  display: block;
+  font-size: 13px;
   margin-top: 80px;
   outline: none;
   padding: 14px 36px;
+  text-decoration: none;
+  width: 148px;
 }
 
-#content button:hover {
+.sedans .btn-learnMore:hover,
+.suvs .btn-learnMore:hover,
+.luxury .btn-learnMore:hover {
   background-color: transparent;
   color: var(--very-light-gray);
   transition: 0.3s;
 }
 
-#sedans {
+.sedans {
   background-color: var(--bright-orange);
   border-radius: 8px 0 0 8px;
 }
 
-#sedans img {
+.sedans img {
   animation: translateLeft 0.5s ease-in-out, fadeIn 0.5s ease-in;
 }
 
-#sedans button {
+.sedans .btn-learnMore {
   color: var(--bright-orange);
 }
 
-#suvs {
+.suvs {
   background-color: var(--dark-cyan);
 }
 
-#suvs img {
+.suvs img {
   animation: translateLeft 0.8s ease-in-out, fadeIn 0.8s ease-in;
 }
 
-#suvs button {
+.suvs .btn-learnMore {
   color: var(--dark-cyan);
 }
 
-#luxury {
+.luxury {
   background-color: var(--very-dark-cyan);
   border-radius: 0px 8px 8px 0;
 }
 
-#luxury img {
+.luxury img {
   animation: translateLeft 1s ease-in-out, fadeIn 1s ease-in;
 }
 
-#luxury button {
+.luxury .btn-learnMore {
   color: var(--very-dark-cyan);
 }
 
@@ -130,11 +135,11 @@ body {
     width: 90%;
   }
 
-  #sedans {
+  .sedans {
     border-radius: 8px 8px 0 0;
   }
 
-  #luxury {
+  .luxury {
     border-radius: 0 0 8px 8px;
   }
 }
